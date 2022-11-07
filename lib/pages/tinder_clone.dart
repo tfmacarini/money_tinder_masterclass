@@ -45,122 +45,135 @@ class TinderClone extends StatelessWidget {
                 ),
               ],
             ),
-            Container(
-              padding: const EdgeInsets.only(top: 50, left: 30, right: 30),
-              child: RichText(
-                textAlign: TextAlign.center,
-                text: TextSpan(
-                    text:
-                        'By tapping Create Account or Sign In, you agree to our ',
-                    style: Theme.of(context).textTheme.bodyText1,
-                    children: [
-                      TextSpan(
-                        text: 'Terms',
-                        style: Theme.of(context).textTheme.bodyText2,
-                      ),
-                      TextSpan(
-                        text: '. Learn how we process your data in our ',
-                        style: Theme.of(context).textTheme.bodyText1,
-                      ),
-                      TextSpan(
-                        text: 'Privacy Policy',
-                        style: Theme.of(context).textTheme.bodyText2,
-                      ),
-                      TextSpan(
-                        text: ' and ',
-                        style: Theme.of(context).textTheme.bodyText1,
-                      ),
-                      TextSpan(
-                        text: 'Cookies Policy ',
-                        style: Theme.of(context).textTheme.bodyText2,
-                      ),
-                      TextSpan(
-                        text: '.',
-                        style: Theme.of(context).textTheme.bodyText1,
-                      ),
-                    ]),
+            ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 400, minWidth: 400),
+              child: Container(
+                padding: const EdgeInsets.only(top: 50, left: 30, right: 30),
+                child: RichText(
+                  textAlign: TextAlign.center,
+                  text: TextSpan(
+                      text:
+                          'By tapping Create Account or Sign In, you agree to our ',
+                      style: Theme.of(context).textTheme.bodyText1,
+                      children: [
+                        TextSpan(
+                          text: 'Terms',
+                          style: Theme.of(context).textTheme.bodyText2,
+                        ),
+                        TextSpan(
+                          text: '. Learn how we process your data in our ',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        TextSpan(
+                          text: 'Privacy Policy',
+                          style: Theme.of(context).textTheme.bodyText2,
+                        ),
+                        TextSpan(
+                          text: ' and ',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                        TextSpan(
+                          text: 'Cookies Policy ',
+                          style: Theme.of(context).textTheme.bodyText2,
+                        ),
+                        TextSpan(
+                          text: '.',
+                          style: Theme.of(context).textTheme.bodyText1,
+                        ),
+                      ]),
+                ),
               ),
             ),
             const SizedBox(
               height: 40,
             ),
-            Container(
-              width: MediaQuery.of(context).size.width * 0.85,
-              height: 45,
-              padding: const EdgeInsets.only(left: 20),
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.white),
-                borderRadius: BorderRadius.circular(30),
-              ),
-              child: Stack(
-                children: [
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Image.asset('assets/apple_icon.png', height: 20),
-                  ),
-                  Align(
-                    alignment: Alignment.center,
-                    child: Text(
-                      'SIGN IN WITH APPLE',
-                      style: Theme.of(context).textTheme.bodyText1,
+            ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 400, minWidth: 400),
+              child: Container(
+                width: MediaQuery.of(context).size.width * 0.85,
+                height: 45,
+                padding: const EdgeInsets.only(left: 20),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white),
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                child: Stack(
+                  children: [
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Image.asset('assets/apple_icon.png', height: 20),
                     ),
-                  )
-                ],
+                    Align(
+                      alignment: Alignment.center,
+                      child: Text(
+                        'SIGN IN WITH APPLE',
+                        style: Theme.of(context).textTheme.bodyText1,
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
             const SizedBox(
               height: 10,
             ),
-            Container(
-              width: MediaQuery.of(context).size.width * 0.85,
-              height: 45,
-              padding: const EdgeInsets.only(left: 20),
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.white),
-                borderRadius: BorderRadius.circular(30),
-              ),
-              child: Stack(
-                children: [
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Image.asset('assets/facebook_icon.png', height: 20),
-                  ),
-                  Align(
-                    alignment: Alignment.center,
-                    child: Text(
-                      'SIGN IN WITH FACEBOOK',
-                      style: Theme.of(context).textTheme.bodyText1,
+            ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 400, minWidth: 400),
+              child: Container(
+                width: MediaQuery.of(context).size.width * 0.85,
+                height: 45,
+                padding: const EdgeInsets.only(left: 20),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white),
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                child: Stack(
+                  children: [
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child:
+                          Image.asset('assets/facebook_icon.png', height: 20),
                     ),
-                  )
-                ],
+                    Align(
+                      alignment: Alignment.center,
+                      child: Text(
+                        'SIGN IN WITH FACEBOOK',
+                        style: Theme.of(context).textTheme.bodyText1,
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
             const SizedBox(
               height: 10,
             ),
-            Container(
-              width: MediaQuery.of(context).size.width * 0.85,
-              height: 45,
-              padding: const EdgeInsets.only(left: 20),
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.white),
-                borderRadius: BorderRadius.circular(30),
-              ),
-              child: Stack(
-                children: [
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: Image.asset('assets/speech_bubble_icon.png',
-                        height: 20),
-                  ),
-                  Align(
-                    alignment: Alignment.center,
-                    child: Text(
-                      'SIGN IN WITH PHONE NUMBER',
-                      style: Theme.of(context).textTheme.bodyText1,
+            ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 400, minWidth: 400),
+              child: Container(
+                width: MediaQuery.of(context).size.width * 0.85,
+                height: 45,
+                padding: const EdgeInsets.only(left: 20),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white),
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                child: Stack(
+                  children: [
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Image.asset('assets/speech_bubble_icon.png',
+                          height: 20),
                     ),
-                  )
-                ],
+                    Align(
+                      alignment: Alignment.center,
+                      child: Text(
+                        'SIGN IN WITH PHONE NUMBER',
+                        style: Theme.of(context).textTheme.bodyText1,
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
             Padding(
